@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Owlcam</title>
+</head>
+<body>
+    <form action="/start_stream" method="post">
+        <button type="submit">start stream</button>
+
+        
+    </form>
+</body>
+</html>
