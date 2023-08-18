@@ -1,14 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
+import stream
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<button type="button">start owlcam</button>'
+    return render_template('index.html')
 
-@ app.route('stream.py')
-def stream():
-    return 'now were streaming'
+@app.route('/start_stream', methods=['POST'])
+def start_stream():
+    result = stream.start_stream()
+    return result
 
 if __name__ == "__main__":
     app.run()
