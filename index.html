@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html>
 <head>
     <title>Owlcam</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <form action="/start_stream" method="post">
-        <button type="submit">start stream</button>
-
+    <div class="header">
+        <span class="logo">picam-boys owlcam</span>
         
+        </div>
+      </div>
+    
+    <form action="/start_stream" method="post">
+        <button type="submit">Start Stream</button>
     </form>
 </body>
 </html>
